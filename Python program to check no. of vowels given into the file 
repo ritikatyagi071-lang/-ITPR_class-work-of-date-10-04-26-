@@ -1,0 +1,53 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/ritikatyagi071-lang/-ITPR_class-work-of-date-10-04-26-/blob/main/Python%20program%20to%20check%20no.%20of%20vowels%20given%20into%20the%20file%20\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#program to count no. of vowels in a file\n",
+        "#opening the file in read mode\n",
+        "filev= open(\"file.txt\",\"r\")\n",
+        "#reading the file content\n",
+        "data= filev.read()\n",
+        "#initialize vowel count\n",
+        "count= 0\n",
+        "#checking each character\n",
+        "for ch in data:\n",
+        "  if ch.lower()in['a','e','i','o','u']:\n",
+        "    count+= 1\n",
+        "\n",
+        "#printing result\n",
+        "print(\"Number of vowels in file:\",count)\n",
+        "#closing the file\n",
+        "filev.close()"
+      ],
+      "metadata": {
+        "id": "jWgSXy974y8a"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ],
+  "metadata": {
+    "colab": {
+      "name": "Welcome To Colab",
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "display_name": "Python 3",
+      "name": "python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 0
+}

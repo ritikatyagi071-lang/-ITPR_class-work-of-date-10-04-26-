@@ -1,0 +1,51 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/ritikatyagi071-lang/-ITPR_class-work-of-date-10-04-26-/blob/main/Python%20program%20for%20print%2020%20sentences%20\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#program for writing data into the file\n",
+        "#opening file for write operation\n",
+        "filev= open(“firstfile.txt”,”w”)\n",
+        "#writing twenty sentences into the file\n",
+        "print(“enter any twenty sentences :”)\n",
+        "for x in range(20):\n",
+        "  #input of data from user\n",
+        "  sentences= input()\n",
+        "  filev.write(sentence +\"\\n\")\n",
+        "    print(“----------------------------------------------------“)\n",
+        "#--------------------------------------------------------------------\n",
+        "print(“Data Successfully written”)\n",
+        "#closing the file\n",
+        "filev.close()\n"
+      ],
+      "metadata": {
+        "id": "n6l2ByuXs3qQ"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ],
+  "metadata": {
+    "colab": {
+      "name": "Welcome To Colab",
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "display_name": "Python 3",
+      "name": "python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 0
+}
